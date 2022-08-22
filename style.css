@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  section {
+    
+  }
+
+  .logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+ 
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+  
+  }
+  
+  .mainContainer{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    /* background-color: lightpink; */
+    height: 700px;
+    padding-top: 225px;
+    padding-left: 625px;
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2317141b' fill-opacity='0.37'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  p{
+    color: white;
+  }
+  
+  h2 {
+    display: inline-block;
+    background-color: white;
+  }
+  .bottomContainer {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .photoOne {
+    /* width: 296px;
+    height: 238px; */
+    /* width: 50px;
+    height: 50px; */
+    grid-column: 1/2;
+    background-color: green;
+  }
+  .photoTwo {
+    width: 296px;
+    height: 238px;
+    background-color: yellow;
+    grid-column: 2/3;
+  }
+  .photoThree {
+    width: 296px;
+    height: 238px;
+    background-color: orange;
+    grid-column: 3/-1;
+  }

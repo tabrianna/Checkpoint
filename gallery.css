@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+
+  h1 {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    
+    
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 900px;
+    height: 900px;
+    
+  }
+  
+  .photoOne {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: pink;
+  }
+  
+  .photoTwo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: yellow;
+  }
+  
+  .photoThree {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+    background-color: blue;
+  }
+  
+  .photoFour {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: blue;
+  }
+  
+  .photoFive {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: orange;
+  }
+  
+  .photoSix {
+    grid-column: 3/-1;
+    grid-row: 2/3;
+    background-color: brown;
+  }
+  
+  .photoSeven {
+    grid-column: 1/2;
+    grid-row: 3/-1;
+    background-color: pink;
+  }
+  
+  
+  .photoEight {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+    background-color: green;
+  }
+  
+  .photoNine {
+    grid-column: 3/-1;
+    grid-row: 3/-1;
+    background-color: blue;
+  }
